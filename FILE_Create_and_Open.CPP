@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-    fstream new_file;
-    new_file.open("NewFile.Txt",ios::out);
+    fstream new_file; //Creating the object of fstream class
+    new_file.open("NewFile.Txt",ios::out); //created a new file named as "NewFile.txt"
     if(!new_file)
     {
         cout<<"Error: File Creation Failed..."<<endl;
@@ -14,8 +14,8 @@ int main()
     {
         cout<<"File Opened Successfully.."<<endl;
         new_file<<"File Data";// Writing data into the file.
-        new_file.close();
-    }
+        new_file.close(); //Closing the opened file
+    }   
     return 0;
 
 }
