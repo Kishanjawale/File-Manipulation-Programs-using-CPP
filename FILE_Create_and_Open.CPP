@@ -13,7 +13,6 @@ int main()
     else
     {
         cout<<"File Opened Successfully.."<<endl;
-        new_file<<"File Data";// Writing data into the file.
         new_file.close(); //Closing the opened file
     }   
     return 0;
